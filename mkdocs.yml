@@ -4,6 +4,9 @@ site_url: https://augmind-ops.vercel.app
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
 
 nav:
   - Home: index.md
@@ -12,6 +15,14 @@ nav:
   - Explainers:
       - Overview: explainers/index.md
       - What Is LangGraph: explainers/what-is-langgraph.md
+  - Setup:
+      - Overview: setup/index.md
+      - Social Cards: setup/social-cards.md
+      - Blog: setup/blog.md
+      - Tags: setup/tags.md
+      - Site Search: setup/site-search.md
+      - Analytics: setup/analytics.md
+    - Footnotes: setup/footnotes.md
   - Enterprise Intelligence:
       - Overview: enterprise/index.md
   - Community Insights:
@@ -22,3 +33,16 @@ nav:
   - Glossary:
       - Overview: glossary/index.md
       - Core Terms: glossary/core-terms.md
+
+plugins:
+  - search
+  - awesome-pages  # optional plugin; requires mkdocs-awesome-pages-plugin in your environment
+  - blog          # provides blog features (requires mkdocs-blog-plugin)
+  - rss           # provides RSS feed generation (requires mkdocs-rss-plugin)
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.extra
+    - markdown.extensions.footnotes

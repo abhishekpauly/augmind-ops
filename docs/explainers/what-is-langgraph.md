@@ -1,7 +1,7 @@
 # What Is LangGraph
 
 ## Overview
-LangGraph is a framework for building AI agent workflows as graphs, where each step is a node and transitions are controlled by edges. It is often used with large language models (LLMs) to create multi-step, stateful agent systems.
+LangGraph (LG) is a framework for building AI agent workflows as graphs, where each step is a node and transitions are controlled by edges. It is often used with large language models (LLMs) to create multi-step, stateful agent systems.
 
 ## Why It Matters
 Many real AI applications need more than a single prompt-response call. They need planning, tool usage, retries, and memory across steps. LangGraph provides a structured way to model these flows so they are easier to reason about and maintain.
