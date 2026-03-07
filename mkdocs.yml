@@ -11,11 +11,14 @@ nav:
       - Overview: learn/index.md
   - Explainers:
       - Overview: explainers/index.md
+      - What Is LangGraph: explainers/what-is-langgraph.md
   - Enterprise Intelligence:
       - Overview: enterprise/index.md
   - Community Insights:
       - Overview: community/index.md
   - Playbooks:
       - Overview: playbooks/index.md
+      - Codex Agent Task Playbook: playbooks/codex-agent-tasks.md
   - Glossary:
       - Overview: glossary/index.md
+      - Core Terms: glossary/core-terms.md
