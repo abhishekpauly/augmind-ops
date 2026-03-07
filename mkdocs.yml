@@ -1,0 +1,21 @@
+site_name: AugMind Ops
+site_description: Augmented Mind Operating System for structured technical knowledge
+site_url: https://augmind-ops.vercel.app
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Learn:
+      - Overview: learn/index.md
+  - Explainers:
+      - Overview: explainers/index.md
+  - Enterprise Intelligence:
+      - Overview: enterprise/index.md
+  - Community Insights:
+      - Overview: community/index.md
+  - Playbooks:
+      - Overview: playbooks/index.md
+  - Glossary:
+      - Overview: glossary/index.md
