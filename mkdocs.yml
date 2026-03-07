@@ -1,3 +1,4 @@
+ 
 site_name: AugMind Ops
 site_description: Augmented Mind Operating System for structured technical knowledge
 site_url: https://augmind-ops.vercel.app
@@ -7,14 +8,19 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.top
+    - content.code.copy
 
 nav:
   - Home: index.md
+
   - Learn:
       - Overview: learn/index.md
+
   - Explainers:
       - Overview: explainers/index.md
       - What Is LangGraph: explainers/what-is-langgraph.md
+
   - Setup:
       - Overview: setup/index.md
       - Social Cards: setup/social-cards.md
@@ -22,27 +28,31 @@ nav:
       - Tags: setup/tags.md
       - Site Search: setup/site-search.md
       - Analytics: setup/analytics.md
-    - Footnotes: setup/footnotes.md
+      - Footnotes: setup/footnotes.md
+
   - Enterprise Intelligence:
       - Overview: enterprise/index.md
+
   - Community Insights:
       - Overview: community/index.md
+
   - Playbooks:
       - Overview: playbooks/index.md
       - Codex Agent Task Playbook: playbooks/codex-agent-tasks.md
+
   - Glossary:
       - Overview: glossary/index.md
       - Core Terms: glossary/core-terms.md
 
 plugins:
   - search
-  - awesome-pages  # optional plugin; requires mkdocs-awesome-pages-plugin in your environment
-  - blog          # provides blog features (requires mkdocs-blog-plugin)
-  - rss           # provides RSS feed generation (requires mkdocs-rss-plugin)
+  - awesome-pages
+  - blog
+  - rss
 
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
-    - pymdownx.inlinehilite
-    - pymdownx.extra
-    - markdown.extensions.footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.extra
+  - footnotes
